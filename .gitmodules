@@ -1,3 +1,3 @@
 [submodule "submodule/vue-lib-exo-nico-corrected"]
 	path = submodule/vue-lib-exo-nico-corrected
-	url = ../vue-lib-exo-nico-corrected-submodule
+	url = git@github.com:nicolidin/vue-lib-submodule-kit.git
