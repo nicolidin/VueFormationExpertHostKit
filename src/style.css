@@ -1,0 +1,3 @@
+/* Vuetify CSS : main.ts → @vueLibExo/style.css
+   SCSS global (Vuetify settings + typo document) : main.ts → vue-lib-exo-corrected.scss
+   Préfixe par SFC : vite → sfc-scss-prelude (spacing + breakpoints) ; @use typo dans les SFC concernés */
