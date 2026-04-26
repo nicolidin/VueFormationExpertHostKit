@@ -3,10 +3,6 @@ import { fromStrapiNote, toStrapiNote } from '@/mapper/strapi/notes';
 import type { NoteType } from '@/types/Domain/NoteType';
 import type { StrapiNoteReadDTO } from '@/types/Strapi/StrapiNoteType';
 
-/**
- * Appels API Strapi - Notes (baseURL = Strapi, chemins /api/notes).
- */
-
 export async function fetchNotesApi(): Promise<NoteType[]> {
   const { data: res } = await axiosClient.get<{ data?: StrapiNoteReadDTO[] }>(
     '/api/notes',
@@ -16,7 +12,6 @@ export async function fetchNotesApi(): Promise<NoteType[]> {
   return Array.isArray(list) ? list.map(fromStrapiNote) : [];
 }
 
-/** id = documentId Strapi (pour GET une ressource) */
 export async function fetchNoteApi(id: string): Promise<NoteType> {
   const { data: res } = await axiosClient.get<{ data: StrapiNoteReadDTO } | StrapiNoteReadDTO>(
     `/api/notes/${id}`,
@@ -38,10 +33,6 @@ export async function postNoteApi(
   return fromStrapiNote(res.data);
 }
 
-/**
- * Mise à jour d'une note (PUT /api/notes/:documentId)
- * id = documentId Strapi
- */
 export async function updateNoteApi(
   id: string,
   payload: Pick<NoteType, 'contentMd' | 'tagIds'>,

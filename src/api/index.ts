@@ -1,4 +1,3 @@
-// API Strapi (notes, tags, community-pinned-notes)
 export {
   fetchNotesApi,
   fetchNoteApi,

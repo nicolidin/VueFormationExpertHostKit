@@ -3,10 +3,6 @@ import { fromStrapiNote } from '@/mapper/strapi/notes';
 import type { NoteType } from '@/types/Domain/NoteType';
 import type { StrapiNoteReadDTO } from '@/types/Strapi/StrapiNoteType';
 
-/**
- * Appels API Strapi - Community Pinned Notes (baseURL = Strapi, /api/community-pinned-notes).
- */
-
 export async function fetchCommunityPinnedNotesApi(): Promise<NoteType[]> {
   const { data: res } = await axiosClient.get<{ data?: StrapiNoteReadDTO[] }>(
     '/api/community-pinned-notes',

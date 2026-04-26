@@ -3,8 +3,8 @@
     <div class="home">
       <h1 class="home__title">Accueil</h1>
       <p class="home__text">
-        Exemple de page d’accueil pour un hôte minimal : routes, Pinia, styles et
-        configuration Vuetify issus de la lib (alias <code>@vueLibExo/</code>).
+        Page d’accueil bidon : le gros du boulot c’est la lib en submodule
+        (<code>@vueLibExo/</code>), Vuetify inclus.
       </p>
     </div>
   </Layout>

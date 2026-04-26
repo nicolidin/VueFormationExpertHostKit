@@ -4,7 +4,6 @@ import type {
   StrapiNoteWriteDTO,
 } from '@/types/Strapi/StrapiNoteType';
 
-/** Strapi → front */
 export function fromStrapiNote(raw: StrapiNoteReadDTO): NoteType {
   return {
     id: raw.documentId,
@@ -16,7 +15,6 @@ export function fromStrapiNote(raw: StrapiNoteReadDTO): NoteType {
   };
 }
 
-/** front → Strapi (payload body pour POST/PUT) */
 export function toStrapiNote(note: Pick<NoteType, 'contentMd' | 'tagIds'>): StrapiNoteWriteDTO {
   const tagIds = (note.tagIds ?? []).filter((id) => id.trim().length > 0);
 

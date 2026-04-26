@@ -3,10 +3,6 @@ import { fromStrapiTag, toStrapiTag } from '@/mapper/strapi/tags';
 import type { TagType } from '@/types/Domain/TagType';
 import type { StrapiTagReadDTO } from '@/types/Strapi/StrapiTagType';
 
-/**
- * Appels API Strapi - Tags (baseURL = Strapi, chemins /api/tags).
- */
-
 export async function fetchTagsApi(): Promise<TagType[]> {
   const { data: res } = await axiosClient.get<{ data?: StrapiTagReadDTO[] }>(
     '/api/tags',

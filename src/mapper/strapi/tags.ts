@@ -4,7 +4,6 @@ import type {
   StrapiTagWriteDTO,
 } from '@/types/Strapi/StrapiTagType';
 
-/** Strapi → front */
 export function fromStrapiTag(raw: StrapiTagReadDTO): TagType {
   const nowIso = new Date().toISOString();
 
@@ -18,7 +17,6 @@ export function fromStrapiTag(raw: StrapiTagReadDTO): TagType {
   };
 }
 
-/** front → Strapi (payload body pour POST/PUT) */
 export function toStrapiTag(tag: {
   title: string;
   color?: string;
