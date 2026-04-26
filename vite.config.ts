@@ -4,7 +4,7 @@ import path from 'path';
 
 const libSrcPath = path.resolve(
   __dirname,
-  'submodule/vue-lib-exo-nico-corrected/src',
+  'submodule/vue-lib-submodule-kit/src',
 );
 
 export default defineConfig({

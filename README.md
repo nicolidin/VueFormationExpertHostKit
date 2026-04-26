@@ -1,6 +1,6 @@
 # VueFormationExoWithLibCorrectedSimpleWithJsonServer
 
-Version simplifiée et pédagogique du projet Vue utilisant la lib **`vue-lib-exo-corrected`** en **submodule Git** (imports **directs** par fichier sous `@vueLibExo/…`, **pas** de barrel `index.ts`) et `json-server`.
+Version simplifiée et pédagogique du projet Vue utilisant la lib **`vue-lib-submodule-kit`** (dossier `submodule/vue-lib-submodule-kit`) en **submodule Git** (imports **directs** par fichier sous `@vueLibExo/…`, **pas** de barrel `index.ts`) et `json-server`.
 
 Clone avec sous-modules : `git clone --recurse-submodules <url-du-host>`. Sinon : `git submodule update --init --recursive`. Voir **`GIT_SUBMODULE_SIMPLE.md`**.
 

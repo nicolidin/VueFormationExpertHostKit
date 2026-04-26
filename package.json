@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "workspaces": [
-    "submodule/vue-lib-exo-nico-corrected"
+    "submodule/vue-lib-submodule-kit"
   ],
   "scripts": {
     "dev": "vite",
