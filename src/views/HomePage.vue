@@ -3,8 +3,9 @@
     <div class="home">
       <h1 class="home__title">Accueil</h1>
       <p class="home__text">
-        Page d’accueil bidon : le gros du boulot c’est la lib en submodule
-        (<code>@vueLibExo/</code>), Vuetify inclus.
+        Ce repository hôte sert de support à la formation Vue Expert. La
+        bibliothèque UI est intégrée en submodule via
+        <code>@vueLibExo/</code>, avec Vuetify inclus.
       </p>
     </div>
   </Layout>
